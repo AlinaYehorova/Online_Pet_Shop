@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { changeQuantity, removeItem, updateQuantity } from '../../redux/cartSlice';
 import styles from './Cart.module.css';
 import FormCart from '../../components/formCart/FormCart';
+import API_URL from '../../utils/api';
 
 export default function CartPage() {
   const dispatch = useDispatch();
@@ -67,7 +68,7 @@ export default function CartPage() {
               <div className={styles.CartPage_item} key={item.id}>
                 <div className={styles.CartPage_itemImg}>
                   <img
-                    src={`http://localhost:3333${item.image}`}
+                    src={`${API_URL}{item.image}`}
                     alt={item.title}
                   />
                 </div>
