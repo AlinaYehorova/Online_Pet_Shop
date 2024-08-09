@@ -1,0 +1,51 @@
+.NotFoundPage {
+    margin: 0 auto;
+    padding: 80px 40px;
+    max-width: 690.8px;
+    display: flex;
+    flex-direction: column;
+}
+.NotFoundPage_top {
+    max-width: 690.8px;
+    overflow: hidden;
+}
+.NotFoundPage_top img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.NotFoundPage_bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.NotFoundPage_bottom h2 {
+    font-size: clamp(30px, 6vw, 64px);
+    font-weight: 700;
+    line-height: 70.4px;
+    text-align: center;color: #282828;
+}
+
+.NotFoundPage_bottom p {
+    font-size: clamp(12px, 1.8vw, 20px);
+    font-weight: 500;
+    line-height: 26px;
+    text-align: center;
+    color: #8B8B8B;
+    margin: 16px 0 32px;
+    width: 92%;
+}
+
+.NotFoundPage_bottom button {
+    max-width: 209px;
+    height: 58px;
+    border-radius: 6px;
+    padding: 16px 56px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    white-space: nowrap;
+
+}

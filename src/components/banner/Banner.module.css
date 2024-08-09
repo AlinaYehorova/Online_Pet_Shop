@@ -1,0 +1,51 @@
+.Banner {
+    background-image: url("../../assets/banner.svg");
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+    max-width: 1440px;
+    height: 100%;
+    padding: 6.25% 6.25% 16.4065%;
+    margin: 0 auto;
+}
+
+.Banner h1 {
+    color: #FFFFFF;
+    font-size: clamp(25px, 9.6vw, 96px);
+    font-weight: 700;
+    line-height: clamp(35px, 10vw, 105.6px);
+    text-align: left;
+    margin-bottom: 3.572%;
+    width: 99%;
+    opacity: 0;
+    filter: blur(20px);
+    animation: fadelnBlur 2s forwards ease-in;
+}
+
+@keyframes fadelnBlur {
+    0% {
+        opacity: 0;
+        filter: blur(20px);
+    }
+    100% {
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+
+.Banner_bnt {
+    background: #0D50FF;
+    border-radius: 6px;
+    color: #FFFFFF;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+    text-align: center;
+
+}
+
+.Banner_bnt:hover {
+    background: #282828;
+}

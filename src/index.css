@@ -1,0 +1,9 @@
+* {
+  font-family: Montserrat, sans-serif;
+  margin: 0 auto;
+  box-sizing: border-box;
+  color: #282828;
+}
+ .container {
+  max-width: 1440px;
+ }

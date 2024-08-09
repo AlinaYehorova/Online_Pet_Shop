@@ -1,0 +1,25 @@
+
+.AllProductsPage {
+    margin: 0 auto;
+    padding: 0 40px;
+    max-width: 1440px;
+}
+.AllProductsPage h2 {
+    font-family: 'Montserrat, sans-serif';
+    font-size: clamp(30px, 6vw, 64px);
+    text-align: left;
+    margin-bottom: 40px;
+}
+.AllProductsPageBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+}
+
+
+@media (max-width: 576px) {
+    .AllProductsPage {
+        padding:0 15px;
+    }
+}

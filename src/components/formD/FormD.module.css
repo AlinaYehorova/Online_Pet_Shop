@@ -1,0 +1,47 @@
+.FormD {
+    max-width: 1360px;
+    background: linear-gradient(to left,#2451c6,#0d50ff );
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 32px 32px 0;
+    border-radius: 12px;
+    margin: 0 auto;
+}
+.FormD h2 {
+color: #fff;
+font-size: clamp(25px, 6vw, 64px);
+font-weight: 700;
+line-height: clamp(30px, 7vw, 70.4px);
+text-align: center;
+font-family: Montserrat, sans-serif;
+
+}
+
+.FormD_box {
+    display: flex;
+}
+.FormD_img {
+    align-self: end;
+}
+.FormD_img img {
+    position: relative;
+    top: 4px;
+    max-width: 100%;
+    height: 100%;
+}
+.FormD_form {
+    max-width: 516px;
+    margin-bottom: 32px;
+}
+.FormD_form input {
+outline-color: #FFFFFF ;
+}
+
+@media (max-width: 992px) {
+    .FormD_box {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+  }

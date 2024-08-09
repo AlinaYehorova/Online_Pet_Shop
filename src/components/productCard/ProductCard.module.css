@@ -1,0 +1,166 @@
+.productCard {
+    max-width: 316px;
+    border: 1px solid #DDDDDD;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    transition: ease-in-out 500ms;
+    &:hover {
+        button {
+          visibility: visible;
+        }
+}
+}
+
+.productCard:hover {
+    box-shadow: 0 0 10px 0.1px #0D50FF;
+    transform: scale(1.01);
+}
+
+.productCard_imgBox {
+    width: 100%;
+    height: 284px;
+    border-bottom: 1px solid #DDDDDD;
+    overflow: hidden;
+}
+
+.productCard_img {
+    max-width: 316px;
+    object-fit: cover;
+}
+
+.discountLabel {
+    width: 63px;
+    height: 34px;
+    background: #0D50FF;
+    padding: 4px 8px;
+    border-radius: 8px;
+    margin-left: 16px;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    overflow: hidden;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+    text-align: center;
+    animation: shakeAnimation 3s ease-out infinite;
+}
+
+.discountLabel p {
+    color: #FFFFFF;
+    z-index: 1;
+}
+
+.discountLabel::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 200% 200%;
+    animation: backgroundChange 3s linear infinite;
+    z-index: 0;
+}
+
+.productCard_buttonBox {
+    width: 100%;
+    padding: 16px;
+    position: absolute;
+    top: 200px;
+    left: 0;
+    visibility: hidden;
+}
+.productCard_buttonBox button {
+width: 100%;
+}
+
+.productCard_buttonBox:hover {
+    visibility: visible !important;
+}
+
+.productCard_info {
+    padding: 20px 32px 32px;
+    text-overflow: ellipsis;
+    max-width: 316px;
+}
+.productCard_title {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    text-align: center;
+    white-space: nowrap;
+    max-width: 316px;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 16px;
+}
+
+.currentPrice {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 44px;
+    text-align: left;
+    margin-right: 16px;
+}
+
+.originalPrice {
+    color: gray;
+    text-decoration: line-through;
+    align-self: end;
+    text-align: left;
+    
+}
+
+@keyframes backgroundChange {
+    0% {
+        background-color: #0D50FF;
+    }
+
+    50% {
+        background-color: #753eff;
+    }
+
+    100% {
+        background-color: #0D50FF;
+    }
+}
+
+@keyframes shakeAnimation {
+
+    0%,
+    50%,
+    60%,
+    70%,
+    80%,
+    90%,
+    100% {
+        transform: translateX(0);
+    }
+
+    10% {
+        transform: translateX(-0.5px);
+    }
+
+    20% {
+        transform: translateX(0.5px);
+    }
+
+    30% {
+        transform: translateX(-0.5px);
+    }
+
+    40% {
+        transform: translateX(0.5px);
+    }
+
+}

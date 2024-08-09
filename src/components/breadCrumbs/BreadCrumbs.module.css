@@ -1,0 +1,41 @@
+.breadcrumbContainer {
+  display: flex;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.breadcrumbItem {
+  font-size: clamp(10px, 1.6vw, 16px);
+  font-weight: 500;
+  color: #8B8B8B;
+  background-color: #FFFFFF;
+  border: 1px solid #DDDDDD;
+  border-radius: 6px;
+  white-space: nowrap;
+  padding: 6px 16px;
+}
+
+.breadcrumbItem:hover {
+  background: #F1F3F4;
+}
+
+.breadcrumbActive {
+  color: #282828;
+}
+
+.breadcrumbSeparator {
+  width: 16px;
+  height: 1px;
+  background-color: #DDDDDD;
+}
+
+@media (max-width: 768px) {
+  .breadcrumbItem  {
+    padding: 6px;
+}
+}
+@media (max-width: 576px) {
+  .breadcrumbItem  {
+    padding: 4px;
+}
+}
