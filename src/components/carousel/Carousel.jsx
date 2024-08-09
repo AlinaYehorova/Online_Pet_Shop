@@ -9,6 +9,7 @@ import KeyboardArrowRight from "@mui/icons-material/KeyboardArrowRight";
 import IconButton from "@mui/material/IconButton";
 import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
+import API_URL from "../../utils/api"
 
 function Carousel() {
   const [images, setImages] = useState([]);
@@ -32,7 +33,7 @@ function Carousel() {
   }
 
   useEffect(() => {
-    axios.get("http://localhost:3333/categories/all")
+    axios.get(`${API_URL}/categories/all`)
       .then(response => {
         setImages(response.data);
       })
@@ -121,7 +122,7 @@ function Carousel() {
                     borderRadius: "8px",
                     objectFit: "cover",
                   }}
-                  src={`http://localhost:3333${step.image}`}
+                  src={`${API_URL}${step.image}`}
                   alt={step.title}
                 />
                 <Button

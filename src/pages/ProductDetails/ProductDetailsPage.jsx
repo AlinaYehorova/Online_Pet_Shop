@@ -15,7 +15,7 @@ export default function ProductDetailsPage() {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
   const [isExpanded, setIsExpanded] = useState(false);
-  const [quantity, setQuantity] = useState(1); // State for quantity
+  const [quantity, setQuantity] = useState(1); 
   const [categoryName, setCategoryName] = useState(false);
   const dispatch = useDispatch();
 
@@ -52,13 +52,11 @@ export default function ProductDetailsPage() {
 
   const handleDecrement = () => {
     if (quantity > 1) {
-      //setQuantity(quantity - 1);
       setQuantity((prev) => prev - 1);
     }
   };
 
   const handleIncrement = () => {
-    //setQuantity(quantity + 1);
     setQuantity((prev) => prev + 1);
   };
 
@@ -101,7 +99,7 @@ export default function ProductDetailsPage() {
       <div className={styles.ProductDetailsPageBox}>
         <div className={styles.ProductDetailsPageBox_item}>
           <div className={styles.ProductDetailsPageBox_itemImg_right}>
-            <img src={`http://localhost:3333${image}`} alt={title} />
+            <img src={`${API_URL}${image}`} alt={title} />
           </div>
 
           <div className={styles.ProductDetailsPageBox_itemInfo}>

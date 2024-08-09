@@ -41,7 +41,7 @@ export default function CategoriesPage() {
           <Link key={category.id} to={`/categories/${category.id}`}>
             <div className={styles.CategoriesPage_itemBox}>
               <img
-                src={`http://localhost:3333${category.image}`}
+                src={`${API_URL}${category.image}`}
                 alt={category.title}
                 className={styles.CategoriesPage_item}
               />
